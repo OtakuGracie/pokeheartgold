@@ -9,10 +9,10 @@ typedef struct MoveTbl {
     u8 accuracy;
     u8 pp;
     u8 effectChance;
-    u16 unk8;
+    u16 target;
     s8 priority;
-    u8 unkB;
-    u8 unkC;
+    u8 flags;
+    u8 contestEffect;
     u8 contestType;
     u8 padding[2];
 } MOVE;
@@ -25,10 +25,10 @@ typedef enum MoveAttr {
     MOVEATTR_ACCURACY,
     MOVEATTR_PP,
     MOVEATTR_EFFECT_CHANCE,
-    MOVEATTR_UNK7,
+    MOVEATTR_FLAGS,
     MOVEATTR_PRIORTY,
-    MOVEATTR_UNK9,
-    MOVEATTR_UNK10,
+    MOVEATTR_FLAGS,
+    MOVEATTR_CONTEST_EFFECT,
     MOVEATTR_CONTEST_TYPE,
 } MoveAttr;
 
