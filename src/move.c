@@ -40,14 +40,14 @@ u32 GetMoveTblAttr(MOVE * moveTbl, MoveAttr attr) {
         return moveTbl->pp;
     case MOVEATTR_EFFECT_CHANCE:
         return moveTbl->effectChance;
-    case MOVEATTR_UNK7:
-        return moveTbl->unk8;
+    case MOVEATTR_TARGET:
+        return moveTbl->target;
     case MOVEATTR_PRIORTY:
         return moveTbl->priority;
-    case MOVEATTR_UNK9:
-        return moveTbl->unkB;
-    case MOVEATTR_UNK10:
-        return moveTbl->unkC;
+    case MOVEATTR_FLAGS:
+        return moveTbl->flags;
+    case MOVEATTR_CONTEST_EFFECT:
+        return moveTbl->contestEffect;
     case MOVEATTR_CONTEST_TYPE:
         return moveTbl->contestType;
     default:
